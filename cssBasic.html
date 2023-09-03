@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CssBasic</title>
+    <!-- Incluye el CSS de Prism.js desde el CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+
+    <!-- Incluye el JavaScript de Prism.js desde el CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+
+    <!--Incluye la biblioteca font awesome para agregar el icono de portapapeles como boton-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Estilos CSS personalizados -->
+    <style>
+        /* Estilos personalizados para el cuadro de código */
+        .code-container {
+            background-color: #000;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+            color: white;
+            /* Color de texto blanco */
+        }
+
+        .code-header {
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-color: #333;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            font-family: sans-serif;
+            justify-content: space-between;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+
+        .code-content {
+            padding: 1rem;
+            overflow-x: auto;
+        }
+
+        .copy-button {
+            background-color: transparent;
+            border: none;
+            color: #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS BÁSICO</h1>
+    <p>Ahora pasaremos a crear sitios web atractivos con la ayuda de un lenguaje de <strong>estilo</strong> llamado
+        <strong>CSS</strong>, lo cuál es la abreviatura de <strong>hojas de estilo en cascada</strong>.
+    </p>
+    <p>Practiquemos cambiando un elemento de encabezado a blue.</p>
+
+    <!-- Función para copiar el código -->
+    <script>
+        function copyCode(codeElement) {
+            const codeText = codeElement.textContent;
+            const textArea = document.createElement("textarea");
+            textArea.value = codeText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Código copiado al portapapeles.");
+        }
+    </script>
+
+    <!-- Ejemplo de código 1 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>html</span>
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-1'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <div class="code-content code-content-1">
+            <pre><code class="language-html">
+            &lt;h2 style="color: blue;"&gt;Delightful Flowers by Brayan&lt;/h2&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h2 style="color: blue;">Delightful Flowers by Brayan</h2>
+
+    <p>Para agregar estilo a un documento HTML, comenzamos con los atributos <strong>style</strong>.</p>
+
+    <!-- Ejemplo de código 2 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>html</span>
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-2'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <div class="code-content code-content-2">
+            <pre><code class="language-html">
+            &lt;h1 style&gt;Agregando el atributo style&lt;/h1&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <p>Dado que <strong>style</strong> es un atributo, necesitamos el signo <strong>=</strong>, seguido de comillas
+        <strong>""</strong> para darle un valor.</p>
+
+    <!-- Ejemplo de código 3 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>html</span>
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-3'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <div class="code-content code-content-3">
+            <pre><code class="language-html">
+            &lt;h1 style=""&gt;Agregando los signos del atributo style&lt;/h1&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <p>Cuando agregamos algo como <strong>color: green;</strong>, estamos agregando una <strong>declaración</strong>.
+        Las declaraciones son CSS, no HTML</p>
+    <p>Una declaración se hace a partir de una <strong>propiedad CSS</strong>, como <strong>color</strong> y un
+        <strong>valor</strong>, como <strong>pink</strong>. La propiedad siempre es lo primero.</p>
+    <p>Agregamos <strong>:</strong> entre la propiedad y el valor, y <strong>;</strong> al final de la declaración.</p>
+    <p>Hay muchas propiedades CSS. Por ejemplo para cambiar el color de un elemento, usamos
+        <strong>background-color</strong> y lo establecemos en un valor como <strong>darkGreen</strong>.</p>
+
+    <!-- Ejemplo de código 4 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <!--Cambiar el code content-->
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-4'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <!--Cambiar el code content para no copiar el mismo texto del anterior codigo-->
+        <div class="code-content code-content-4">
+            <pre><code class="language-html">
+            &lt;h1 style="background-color: darkGreen"&gt;Agregando el atributo style&lt;/h1&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h1 style="background-color: darkGreen">Agregando el atributo style</h1>
+    <p>Podemos agregar tantas propiedades como queramos siempre que terminemos cada una con un <strong>punto y coma</strong>.</p>
+
+    <!-- Ejemplo de código 5 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <!--Cambiar el code content-->
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-5'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <!--Cambiar el code content para no copiar el mismo texto del anterior codigo-->
+        <div class="code-content code-content-5">
+            <pre><code class="language-html">
+            &lt;h1 style="color: pink; background-color: darkGreen"&gt;Agregando el atributo style&lt;/h1&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <h1 style="color: pink; background-color: darkGreen">Agregando el atributo style</h1>
+    
+    <h3>Cambiando la propiedad color al elemento a en red.</h3>
+    <p>Cambiando el color de un link.</p>
+</body>
+
+    <!-- Ejemplo de código 6 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <!--Cambiar el code content-->
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-6'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <!--Cambiar el code content para no copiar el mismo texto del anterior codigo-->
+        <div class="code-content code-content-6">
+            <pre><code class="language-html">
+            &lt;a style="color: red;" href="https://mimo.app/r/homeflix.html"&gt;Try 30 Days Free!&lt;/a&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <a style="color: red;" href="https://mimo.app/r/homeflix.html">Try 30 Days Free!</a>
+
+</html>
