@@ -11,6 +11,9 @@
     <!-- Incluye el JavaScript de Prism.js desde el CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
 
+    <!--Incluye la dirección de la lección 2, etiquetas de estilo-->
+    <link rel="stylesheet" href="">
+
     <!--Incluye la biblioteca font awesome para agregar el icono de portapapeles como boton-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -174,7 +177,7 @@
     
     <h3>Cambiando la propiedad color al elemento a en red.</h3>
     <p>Cambiando el color de un link.</p>
-</body>
+
 
     <!-- Ejemplo de código 6 -->
     <div class="code-container">
@@ -195,6 +198,128 @@
 
     <a style="color: red;" href="https://mimo.app/r/homeflix.html">Try 30 Days Free!</a>
 
-    <p>Una de las partes más importantes</p>
+    <p>Una de las partes más importantes de un sitio web es el texto. Podemosmodificar el texto de muchas formas, desde el tamaño hasta el estilo o el grosor.</p>
+    <h3>Para cambiar el tamaño del texto, usamos la <strong>propiedas font-size</strong>.</h3>
+    <!-- Ejemplo de código 7 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <!--Cambiar el code content-->
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-7'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <!--Cambiar el code content para no copiar el mismo texto del anterior codigo-->
+        <div class="code-content code-content-7">
+            <pre><code class="language-html">
+            &lt;p style="font-size: ;"&gt;Avatar&lt;/p&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <p style="font-size: large;">Avatar</p>
+    <p>Medimos elementos en una página web con <strong>píxeles</strong>. Para especificar un tamaño, agregamos un número.</p>
+    <p>Lo cual después del número, seguimos con la abreviatura, <strong>px</strong>.</p>
+
+    <!-- Ejemplo de código 8 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <!--Cambiar el code content-->
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-8'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <!--Cambiar el code content para no copiar el mismo texto del anterior codigo-->
+        <div class="code-content code-content-8">
+            <pre><code class="language-html">
+            &lt;p style="font-size: 60px;"&gt;Avatar&lt;/p&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <p style="font-size: 60px;">Avatar</p>
+
+    <p>Para establecer el tipo de fuente para un elemento, se agrega la <strong>propiedad font-family</strong>.</p>
+
+    <!-- Ejemplo de código 9 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <!--Cambiar el code content-->
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-9'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <!--Cambiar el code content para no copiar el mismo texto del anterior codigo-->
+        <div class="code-content code-content-9">
+            <pre><code class="language-html">
+            &lt;p style="font-family: ;"&gt;Avatar&lt;/p&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p>Hay todo tipo de valores posibles para font-family, desde <strong>Times New Roman</strong> hasta Helvetica.</p>
+    <!-- Ejemplo de código 10 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <!--Cambiar el code content-->
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-10'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <!--Cambiar el code content para no copiar el mismo texto del anterior codigo-->
+        <div class="code-content code-content-10">
+            <pre><code class="language-html">
+            &lt;p style="font-family: Courier New;"&gt;Avatar&lt;/p&gt;
+            </code></pre>
+        </div>
+    </div>
+
+    <p style="font-family: Courier New;">Avatar</p>
+
+    <p>Para poner en cursiva el texto de un elemento, usamos la <strong>propiedad font-style</strong> y establecemos el valor en <strong>italic.</strong></p>
+    <!-- Ejemplo de código 11 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <!--Cambiar el code content-->
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-11'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <!--Cambiar el code content para no copiar el mismo texto del anterior codigo-->
+        <div class="code-content code-content-11">
+            <pre><code class="language-html">
+            &lt;p style="font-style: italic;"&gt;Avatar&lt;/p&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p style="font-style: italic;">Avatar</p>
+
+    <p>Para poner en negrita el texto de un elemento, usamos la <strong>propiedad font-weight</strong> y establecemos el valor en <strong>bold</strong>.</p>
+    <!-- Ejemplo de código 12 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <!--Cambiar el code content-->
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-12'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <!--Cambiar el code content para no copiar el mismo texto del anterior codigo-->
+        <div class="code-content code-content-12">
+            <pre><code class="language-html">
+            &lt;p style="font-style: italic; font-weight: bold;"&gt;Avatar&lt;/p&gt;
+            </code></pre>
+        </div>
+    </div>
+    <p style="font-style: italic; font-weight: bold;">Avatar</p>
+
+    //SIGUIENTE LECCIÓN
+    <h2>Uso de etiquetas de estilo</h2>
+    <button onclick="location.href='http://127.0.0.1:5500/etiquetasEstilo.html'">etiquetas de Estilo</button>
+
+</body>
 
 </html>
