@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etiquetas de Estilo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <link rel="stylesheet" href="etiquetasEstilo.html">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
     <h1>Uso de etiquetas de estilo.</h1>
-    <p>¡Las páginas web modernas tienen mucho estilo!. Eso significa que tienen muchas propiedades para que se vean geniales.</p>
+    <p>¡Las páginas web modernas tienen mucho estilo!. Eso significa que tienen muchas propiedades para que se vean
+        geniales.</p>
+    <p>Si queremos que un estilo se aplique a toda la página, podemos utilizar el selector de <strong>body</strong>.</p>
+    
+    <style>
+        body {
+            background-color: lightblue;
+            color: #000;
+        }
+
+        /* Estilos personalizados para el cuadro de código */
+        .code-container {
+            background-color: #000;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+            color: white;
+            /* Color de texto blanco */
+        }
+
+        .code-header {
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-color: #333;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            font-family: sans-serif;
+            justify-content: space-between;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+
+        .code-content {
+            padding: 1rem;
+            overflow-x: auto;
+        }
+
+        .copy-button {
+            background-color: transparent;
+            border: none;
+            color: #ccc;
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Función para copiar el código -->
+    <script>
+        function copyCode(codeElement) {
+            const codeText = codeElement.textContent;
+            const textArea = document.createElement("textarea");
+            textArea.value = codeText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Código copiado al portapapeles.");
+        }
+    </script>
+
+    <!-- Ejemplo de código 1 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-1'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <div class="code-content code-content-1">
+            <pre><code class="language-css">
+            body {
+                background-color: lightblue;
+            }
+        </code></pre>
+        </div>
+    </div>
+
+    <p>Establecer el color de fondo en <strong>lightblue;</strong> dentro de la regla del <strong>body</strong> establece el fondo para el cuerpo.</p>
+    <p>Estiilos como <strong>color: black;</strong> cuando se establecen dentro de la regla del <strong>body</strong>, se aplicará a todos los elementos dentro del body.</p>
+
+    <!-- Ejemplo de código 2 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-2'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <div class="code-content code-content-2">
+            <pre><code class="language-css">
+                body {
+                    background-color: lightblue;
+                    color: black;
+                }
+            </code></pre>
+        </div>
+    </div>
+
+    <p>Podemos diseñar tantos elementos como queramos dentro de las etiquetas de <strong>style</strong>, siempre que las agreguemos un espacio entre las diferentes reglas.</p>
+
+    <script>
+        Prism.highlightAll();
+    </script>
+
+
 </body>
+
 </html>
