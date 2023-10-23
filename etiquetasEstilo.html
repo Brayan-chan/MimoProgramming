@@ -23,12 +23,18 @@
     
     <style>
         body {
-            background-color: lightblue;
-            color: #000;
+            background-color: cornSilk;
         }
 
         h1 {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Helvetica;
+            color: darkgray;
+        }
+
+        p {
+            color: gray;
+            font-weight: bold;
+            font-family: cursive;
         }
 
         /* Estilos personalizados para el cuadro de código */
@@ -140,6 +146,44 @@
             </code></pre>
         </div>
     </div>
+
+    <p>El uso de la etiqueta del <strong>body</strong> es una de las formas más fáciles de agregar reglas superpuestas en los elementos.</p>
+
+    <!-- Ejemplo de código 4 -->
+    <div class="code-container">
+        <div class="code-header">
+            <span>CSS</span>
+            <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-4'))">
+                <i class="fas fa-copy"></i> Copy code
+            </button>
+        </div>
+        <div class="code-content code-content-4">
+            <pre><code class="language-css">
+        body {
+        background-color: cornSilk;
+        }
+        
+        h1 {
+        font-family: Helvetica;
+        color: darkgray;
+        }
+        
+        p {
+        color: gray;
+        font-weight: bold;
+        font-family: cursive;
+        }
+                </code></pre>
+        </div>
+    </div>
+
+    <h1>Venn Diagram Generator</h1>
+    <p>Learn how to create your own personal Venn Diagrams</p>
+    <img  src="https://mimo.app/r/venn.png" alt="Van Diagram">
+
+    <h3>Siguiente lección</h3>
+    <button onclick="location.href='etiquetasSelectores.html'">Hoja de estilo y selectores básicos</button>
+
 
     <script>
         Prism.highlightAll();
