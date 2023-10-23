@@ -1,0 +1,33 @@
+        /* Estilos personalizados para el cuadro de código */
+        .code-container {
+            background-color: #000;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+            color: white;
+            /* Color de texto blanco */
+        }
+
+        .code-header {
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-color: #333;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            font-family: sans-serif;
+            justify-content: space-between;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+
+        .code-content {
+            padding: 1rem;
+            overflow-x: auto;
+        }
+
+        .copy-button {
+            background-color: transparent;
+            border: none;
+            color: #ccc;
+            cursor: pointer;
+        }

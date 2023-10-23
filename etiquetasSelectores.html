@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-adsense-account" content="ca-pub-9056689374866921">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9056689374866921"
+    crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selectores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <link rel="stylesheet" href="etiquetasEstilo.html">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="personalize.css">
+    <link rel="stylesheet" href="copyCode.js">
 </head>
 <body>
     <h1>Selectores</h1>
+    <p>Agregar todo nuestro CSS entre las etiquetas de estilo crea enormes archivos HTML que son difíciles de editar.</p>
+    <style>
+        body {
+            font-family: "Helvetica Neue";
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        img {
+            border-radius: 10px;
+            margin-top: 8px;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    </style>
+
+    <img src="https://mimo.app/r/insta.svg" alt="INSTAPOLAROID">
+
+    <script>
+        Prism.highlightAll();
+    </script>
+
+<!-- Ejemplo de código 4 -->
+<div class="code-container">
+    <div class="code-header">
+        <span>HTML</span>
+        <button class="copy-button" onclick="copyCode(document.querySelector('.code-content-4'))">
+            <i class="fas fa-copy"></i> Copy code
+        </button>
+    </div>
+    <div class="code-content code-content-4">
+        <pre><code class="language-css">
+        body {
+        background-color: cornSilk;
+        }
+            
+        h1 {
+        font-family: Helvetica;
+        color: darkgray;
+        }
+            
+        p {
+        color: gray;
+        font-weight: bold;
+        font-family: cursive;
+        }
+                </code></pre>
+    </div>
+</div>
 </body>
 </html>
